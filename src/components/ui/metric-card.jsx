@@ -1,16 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { LucideIcon } from "lucide-react";
-
-interface MetricCardProps {
-  title: string;
-  value: string;
-  change?: string;
-  changeType?: "positive" | "negative" | "neutral";
-  icon: LucideIcon;
-  gradient?: "primary" | "success" | "warning" | "info";
-  className?: string;
-}
 
 export function MetricCard({
   title,
@@ -20,7 +9,7 @@ export function MetricCard({
   icon: Icon,
   gradient = "primary",
   className,
-}: MetricCardProps) {
+}) {
   return (
     <Card className={cn("shadow-card hover:shadow-lg transition-shadow duration-200", className)}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

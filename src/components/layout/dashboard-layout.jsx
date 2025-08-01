@@ -1,11 +1,7 @@
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { HRSidebar } from "./hr-sidebar";
 
-interface DashboardLayoutProps {
-  children: React.ReactNode;
-}
-
-export function DashboardLayout({ children }: DashboardLayoutProps) {
+export function DashboardLayout({ children }) {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full bg-background">

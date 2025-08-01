@@ -1,4 +1,4 @@
-import { DashboardLayout } from "@/components/layout/dashboard-layout";
+import { DashboardLayout } from "@/components/layout/dashboard-layout.jsx";
 import { MetricCard } from "@/components/ui/metric-card";
 import { WorkforceChart } from "@/components/charts/workforce-chart";
 import { PerformanceChart } from "@/components/charts/performance-chart";

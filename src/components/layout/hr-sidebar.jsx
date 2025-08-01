@@ -49,7 +49,7 @@ export function HRSidebar() {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const isActive = (path: string) => {
+  const isActive = (path) => {
     if (path === "/") return currentPath === "/";
     return currentPath.startsWith(path);
   };
